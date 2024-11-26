@@ -1,7 +1,7 @@
 <?php
-include 'db_connection.php';
+include 'database.php';
 
-$sql = "SELECT id, cim, ev, hossz FROM Film";
+$sql = "SELECT id, cim, ev, hossz FROM film";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -13,7 +13,7 @@ if ($result->num_rows > 0) {
                 <th>Év</th>
                 <th>Hossz (perc)</th>
             </tr>";
-    while($row = $result->fetch_assoc()) {
+    while ($row = $result->fetch_assoc()) {
         echo "<tr>
                 <td>{$row['id']}</td>
                 <td>{$row['cim']}</td>
@@ -27,4 +27,3 @@ if ($result->num_rows > 0) {
 }
 
 $conn->close();
-?>

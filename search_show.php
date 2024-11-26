@@ -1,11 +1,11 @@
 <?php
-include 'db_connection.php';
+include 'database.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mozi_id = $_POST['mozi_id'];
     $datum = $_POST['datum'];
 
-    $sql = "SELECT * FROM Előadás WHERE moziid = $mozi_id AND datum = '$datum'";
+    $sql = "SELECT * FROM eloadas WHERE moziid = $mozi_id AND datum = '$datum'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <th>Nézőszám</th>
                     <th>Bevétel</th>
                 </tr>";
-        while($row = $result->fetch_assoc()) {
+        while ($row = $result->fetch_assoc()) {
             echo "<tr>
                     <td>{$row['filmid']}</td>
                     <td>{$row['moziid']}</td>

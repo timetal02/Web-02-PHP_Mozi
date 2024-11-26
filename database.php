@@ -1,6 +1,6 @@
 <?php
 // Adatbázis kapcsolat adatai
-$servername = "localhost";
+$servername = "localhost:3307";
 $username = "root";
 $password = ""; // Állítsd be a jelszót
 $dbname = "mozi";
@@ -13,5 +13,4 @@ if ($conn->connect_error) {
     die("Kapcsolódási hiba: " . $conn->connect_error);
 }
 
-echo "Sikeres adatbázis-kapcsolódás!";
-?>
+$conn->set_charset("utf8");

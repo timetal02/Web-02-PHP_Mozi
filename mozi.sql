@@ -2,7 +2,7 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Gép: localhost
+-- Gép: localhost:3307
 -- Létrehozás ideje: 2024. Nov 24. 18:14
 -- Kiszolgáló verziója: 8.0.40
 -- PHP verzió: 8.2.12
@@ -33,7 +33,7 @@ CREATE TABLE `eloadas` (
   `datum` date NOT NULL,
   `nezoszam` int DEFAULT NULL,
   `bevetel` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- A tábla adatainak kiíratása `eloadas`
@@ -72,7 +72,7 @@ CREATE TABLE `film` (
   `cim` varchar(200) DEFAULT NULL,
   `ev` int DEFAULT NULL,
   `hossz` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- A tábla adatainak kiíratása `film`
@@ -135,7 +135,7 @@ CREATE TABLE `mozi` (
   `nev` varchar(100) DEFAULT NULL,
   `varos` varchar(100) DEFAULT NULL,
   `ferohely` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- A tábla adatainak kiíratása `mozi`
