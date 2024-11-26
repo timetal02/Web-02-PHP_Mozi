@@ -72,9 +72,9 @@ foreach ($menu_items as $item) {
         <div class="user-status" style="display: flex; flex-direction: column; align-items: flex-end;">
             <?php if (isset($_SESSION['user_id'])): ?>
                 <p class="welcome-message" style="color: #fff; margin: 0 0 5px 0; text-align: right;">Üdv, <strong><?php echo htmlspecialchars($_SESSION['username']); ?></strong></p>
-                <a class="btn-getstarted" href="kijelentkezes.php" style="text-align: right;">Kijelentkezés</a>
+                <a class="btn-getstarted" href="logout.php" style="text-align: right;">Kijelentkezés</a>
             <?php else: ?>
-                <a class="btn-getstarted" href="bejelentkezes.php">Bejelentkezés</a>
+                <a class="btn-getstarted" href="login.php">Bejelentkezés</a>
             <?php endif; ?>
         </div>
     </div>

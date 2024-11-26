@@ -52,7 +52,7 @@ include_once 'common/head.php';
                                     <h1 class="banner_taital">Become Artitech of your future business</h1>
                                     <form>
                                         <input type="text" class="search_text" placeholder="Search text here" name="Search text here">
-                                        <div class="search_bt"><a href="#">Search Now</a></div>
+                                        <div class="search_bt"><a href="/kereses.php">Search Now</a></div>
                                     </form>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@ include_once 'common/head.php';
                                     <h1 class="banner_taital">Become Artitech of your future business</h1>
                                     <form>
                                         <input type="text" class="search_text" placeholder="Search text here" name="Search text here">
-                                        <div class="search_bt"><a href="#">Search Now</a></div>
+                                        <div class="search_bt"><a href="/kereses.php">Search Now</a></div>
                                     </form>
                                 </div>
                             </div>

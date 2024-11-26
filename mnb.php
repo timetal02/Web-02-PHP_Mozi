@@ -21,7 +21,7 @@ include_once 'common/head.php';
          </div>
          <div class="market_section_2">
             <h4 class="market_text active">01 <span class="padding10">words which don't look even slightly believable. If you are going </span></h4>
-            
+
          </div>
          <div class="seemore_bt"><a href="#">Read More</a></div>
       </div>
