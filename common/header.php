@@ -17,6 +17,18 @@ $menu_items = [
     ['name' => 'Értékelések', 'url' => 'index.php#review'],
 ];
 
+
+$query = "SELECT * FROM menu WHERE name = ? AND url = ?";
+$stmt = $conn->prepare($query);
+
+// Hibaellenőrzés
+if (!$stmt) {
+    die("SQL előkészítési hiba: " . $conn->error);
+}
+
+$stmt->bind_param("ss", $item['name'], $item['url']);
+
+
 // Frissítés az adatbázisban
 foreach ($menu_items as $item) {
     $query = "SELECT * FROM menu WHERE name = ? AND url = ?";

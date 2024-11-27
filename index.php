@@ -33,26 +33,26 @@ include_once 'common/head.php';
                             </div>
                             <div class="col-md-6">
                                 <div class="banner_taital_main">
-                                    <h1 class="banner_taital">Become Artitech of your future business</h1>
+                                    <h1 class="banner_taital">Művészfilmek</h1>
                                     <form>
-                                        <input type="text" class="search_text" placeholder="Search text here" name="Search text here">
-                                        <div class="search_bt"><a href="/search.php">Search Now</a></div>
+                                        <input type="text" class="search_text" placeholder="Keresés előadásokra" name="Keresés előadásokra"">
+                                        <div class="search_bt"><a href="/search.php">Keresés</a></div>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                    </div>Kérem
+                    </div>
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="banner_img"><img src="images/banner-img.png"></div>
+                                <div class="banner_img"><img src="images/banner-img2.png"></div>
                             </div>
                             <div class="col-md-6">
                                 <div class="banner_taital_main">
-                                    <h1 class="banner_taital">Become Artitech of your future business</h1>
-                                    <form><p class="categroy_text">words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't</p>
-                                        <input type="text" class="search_text" placeholder="Search text here" name="Search text here">
-                                        <div class="search_bt"><a href="/search.php">Search Now</a></div>
+                                    <h1 class="banner_taital">"Csókolj meg édes" c. Romantikus film"</h1>
+                                    <form><p class="categroy_text">Két világ talákozása egy helyen...</p>
+                                        <input type="text" class="search_text" placeholder="Keresés előadásokra"" name="Keresés előadásokra"">
+                                        <div class="search_bt"><a href="/search.php">Keresés</a></div>
                                     </form>
                                 </div>
                             </div>
@@ -63,14 +63,14 @@ Kérem adja meg a bejelentkezési adatait:
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="banner_img"><img src="images/banner-img.png"></div>
+                                <div class="banner_img"><img src="images/banner-img3.png"></div>
                             </div>
                             <div class="col-md-6">
                                 <div class="banner_taital_main">
-                                    <h1 class="banner_taital">Become Artitech of your future business</h1>
+                                    <h1 class="banner_taital">"Te és Én" klassza siker film újra a vásznon!"</h1>
                                     <form>
-                                        <input type="text" class="search_text" placeholder="Search text here" name="Search text here">
-                                        <div class="search_bt"><a href="/search.php">Search Now</a></div>
+                                        <input type="text" class="search_text" placeholder="Keresés az előadásokra" name="Keresés az előadásokra">
+                                        <div class="search_bt"><a href="/search.php">Keresés</a></div>
                                     </form>
                                 </div>
                             </div>

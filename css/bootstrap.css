@@ -66,8 +66,9 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background: linear-gradient(to bottom, #800000, #000) !important; /* Bordóból feketébe átmenet */
 }
+
 
 [tabindex="-1"]:focus {
   outline: 0 !important;
