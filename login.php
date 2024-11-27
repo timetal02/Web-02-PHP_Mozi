@@ -49,48 +49,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 include_once 'common/head.php';
 ?>
 
-<body class="starter-page-page">
-
     <?php
     include_once 'common/header.php';
     ?>
 
+<body class="starter-page-page">
     <main class="main">
-
         <div class="container">
             <h1>Kérem adja meg a bejelentkezési adatait: </h1>
         </div>
-
-
-        <section id="starter-section" class="starter-section section">
-            <div class="container" data-aos="fade-up">
-                <?php if (!empty($welcome_message)): ?>
-                    <div class="alert alert-success" role="alert">
-                        <?php echo $welcome_message; ?>
-                    </div>
-                <?php elseif (isset($error)): ?>
-                    <div class="alert alert-danger" role="alert">
-                        <?php echo htmlspecialchars($error); ?>
-                    </div>
-                <?php endif; ?>
-
-                <?php if (empty($welcome_message)): ?>
-                    <form method="POST" action="">
-                        <div class="mb-3">
-                            <label for="felh_nev" class="form-label">Felhasználónév</label>
-                            <input type="text" class="form-control" id="felh_nev" name="felh_nev" required>
+        <div class="container">
+            <section id="starter-section" class="starter-section section">
+                <div class="container" data-aos="fade-up">
+                    <?php if (!empty($welcome_message)): ?>
+                        <div class="alert alert-success" role="alert">
+                            <?php echo $welcome_message; ?>
+                </div>
+                    <?php elseif (isset($error)): ?>
+                        <div class="alert alert-danger" role="alert">
+                            <?php echo htmlspecialchars($error); ?>
                         </div>
-                        <div class="mb-3">
-                            <label for="jelszo" class="form-label">Jelszó</label>
-                            <input type="jelszo" class="form-control" id="jelszo" name="jelszo" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Bejelentkezés</button>
-                    </form>
+                    <?php endif; ?>
 
-                    <p class="mt-3">Nem regisztrált felhasználó? <a href="registration.php">Regisztráljon most</a>.</p>
-                <?php endif; ?>
-            </div>
-        </section>
+                    <?php if (empty($welcome_message)): ?>
+                        <form method="POST" action="">
+                            <div class="mb-3">
+                                <label for="felh_nev" class="form-label">Felhasználónév</label>
+                                <input type="text" class="form-control" id="felh_nev" name="felh_nev" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="jelszo" class="form-label">Jelszó</label>
+                                <input type="jelszo" class="form-control" id="jelszo" name="jelszo" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Bejelentkezés</button>
+                        </form>
+
+                        <p class="mt-3">Nem regisztrált felhasználó? <a href="registration.php">Regisztráljon most</a>.</p>
+                    <?php endif; ?>
+                </div>
+            </section>
+        </div>
     </main>
 
     <?php

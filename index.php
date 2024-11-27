@@ -41,7 +41,7 @@ include_once 'common/head.php';
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>Kérem
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-md-6">
@@ -50,7 +50,7 @@ include_once 'common/head.php';
                             <div class="col-md-6">
                                 <div class="banner_taital_main">
                                     <h1 class="banner_taital">Become Artitech of your future business</h1>
-                                    <form>
+                                    <form><p class="categroy_text">words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't</p>
                                         <input type="text" class="search_text" placeholder="Search text here" name="Search text here">
                                         <div class="search_bt"><a href="/search.php">Search Now</a></div>
                                     </form>
@@ -58,6 +58,8 @@ include_once 'common/head.php';
                             </div>
                         </div>
                     </div>
+Kérem adja meg a bejelentkezési adatait:
+
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-md-6">

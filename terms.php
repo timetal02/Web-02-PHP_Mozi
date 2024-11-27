@@ -16,14 +16,14 @@ include_once 'common/head.php';
       <div class="container">
          <div class="row">
             <div class="col-md-12">
-               <h1 class="market_taital">Market Research Reports</h1>
+               <h1 class="market_taital">Általános Szerződési Feltételek</h1>
             </div>
          </div>
          <div class="market_section_2">
-            <h4 class="market_text active"><span class="padding10">words which don't look even slightly believable. If you are going </span></h4>
+            <h4 class="market_text active"><span class="padding10">Kérem figyelmesen olvassa el a license feltételeket majd erősítse meg a négyzet bejelölésével!</span></h4>
 
          </div>
-         <div class="seemore_bt"><a href="#">Read More</a></div>
+         <div class="seemore_bt"><a href="registration.php">Vissza</a></div>
       </div>
    </div>
    <!-- market section end -->
@@ -35,3 +35,7 @@ include_once 'common/head.php';
 </body>
 
 </html>
+
+
+
+

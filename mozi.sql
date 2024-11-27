@@ -2,9 +2,9 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Gép: localhost:3307
--- Létrehozás ideje: 2024. Nov 24. 18:14
--- Kiszolgáló verziója: 8.0.40
+-- Gép: localhost
+-- Létrehozás ideje: 2024. Nov 27. 18:00
+-- Kiszolgáló verziója: 10.4.32-MariaDB
 -- PHP verzió: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -28,11 +28,11 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `eloadas` (
-  `filmid` int NOT NULL,
-  `moziid` int NOT NULL,
+  `filmid` int(11) NOT NULL,
+  `moziid` int(11) NOT NULL,
   `datum` date NOT NULL,
-  `nezoszam` int DEFAULT NULL,
-  `bevetel` int DEFAULT NULL
+  `nezoszam` int(11) DEFAULT NULL,
+  `bevetel` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -64,14 +64,27 @@ INSERT INTO `eloadas` (`filmid`, `moziid`, `datum`, `nezoszam`, `bevetel`) VALUE
 -- --------------------------------------------------------
 
 --
+-- Tábla szerkezet ehhez a táblához `felhasznalok`
+--
+
+CREATE TABLE `felhasznalok` (
+  `felh_ID` int(40) NOT NULL,
+  `felh_nev` varchar(255) NOT NULL,
+  `jelszo` varchar(255) NOT NULL,
+  `jogosultsag` enum('látogató','regisztrált látogató','admin','') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Tábla szerkezet ehhez a táblához `film`
 --
 
 CREATE TABLE `film` (
-  `id` int NOT NULL,
+  `id` int(11) NOT NULL,
   `cim` varchar(200) DEFAULT NULL,
-  `ev` int DEFAULT NULL,
-  `hossz` int DEFAULT NULL
+  `ev` int(11) DEFAULT NULL,
+  `hossz` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -127,14 +140,41 @@ INSERT INTO `film` (`id`, `cim`, `ev`, `hossz`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Tábla szerkezet ehhez a táblához `menu`
+--
+
+CREATE TABLE `menu` (
+  `id` int(20) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `parent_id` int(20) DEFAULT NULL,
+  `url` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- A tábla adatainak kiíratása `menu`
+--
+
+INSERT INTO `menu` (`id`, `name`, `parent_id`, `url`) VALUES
+(1, 'Főoldal', NULL, 'index.php'),
+(2, 'Rólunk', NULL, 'index.php#about'),
+(3, 'Vetítések', NULL, 'projections.php'),
+(4, 'Kapcsolat', NULL, 'index.php#contact'),
+(5, 'MNB', NULL, 'mnb.php'),
+(7, 'Kategóriák', NULL, 'index.php#category'),
+(8, 'Blog', NULL, 'index.php#blog'),
+(9, 'Értékelések', NULL, 'index.php#review');
+
+-- --------------------------------------------------------
+
+--
 -- Tábla szerkezet ehhez a táblához `mozi`
 --
 
 CREATE TABLE `mozi` (
-  `id` int NOT NULL,
+  `id` int(11) NOT NULL,
   `nev` varchar(100) DEFAULT NULL,
   `varos` varchar(100) DEFAULT NULL,
-  `ferohely` int DEFAULT NULL
+  `ferohely` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
