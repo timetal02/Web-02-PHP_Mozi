@@ -1,0 +1,7 @@
+Ez a projekt kizárólag egy iskolai beadandó végett jött létre, amely során az alábbi linken feltűntetett források és hozzátartozó license -k kerültek felhasználásra:
+
+
+Alien – Free Bootstrap 4 HTML5 Business Website Template:
+
+https://themewagon.com/themes/alien/
+https://themewagon.com/license/

@@ -9,7 +9,7 @@ include_once 'database.php'; // Adatbázis kapcsolat
 $menu_items = [
     ['name' => 'Főoldal', 'url' => 'index.php'],
     ['name' => 'Rólunk', 'url' => 'index.php#about'],
-    ['name' => 'Vetítések', 'url' => 'vetitesek.php'],
+    ['name' => 'Vetítések', 'url' => 'projections.php'],
     ['name' => 'MNB', 'url' => 'mnb.php'],
     ['name' => 'Kapcsolat', 'url' => 'index.php#contact'],
     ['name' => 'Kategóriák', 'url' => 'index.php#category'],
@@ -70,8 +70,8 @@ foreach ($menu_items as $item) {
 
         <!-- Dinamikus bejelentkezés állapot kijelzése -->
         <div class="user-status" style="display: flex; flex-direction: column; align-items: flex-end;">
-            <?php if (isset($_SESSION['user_id'])): ?>
-                <p class="welcome-message" style="color: #fff; margin: 0 0 5px 0; text-align: right;">Üdv, <strong><?php echo htmlspecialchars($_SESSION['username']); ?></strong></p>
+            <?php if (isset($_SESSION['felh_ID'])): ?>
+                <p class="welcome-message" style="color: #fff; margin: 0 0 5px 0; text-align: right;">Üdvözöljük, <strong><?php echo htmlspecialchars($_SESSION['felh_nev']); ?></strong></p>
                 <a class="btn-getstarted" href="logout.php" style="text-align: right;">Kijelentkezés</a>
             <?php else: ?>
                 <a class="btn-getstarted" href="login.php">Bejelentkezés</a>

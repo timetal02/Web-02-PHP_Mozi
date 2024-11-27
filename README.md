@@ -1,3 +1,3 @@
-Web-02- Php feladat - Mozi 
-2024
-teszt
+# Webprog_2
+PHP beadandó megvalósítására létrehozott "repository".
+(Egy szerver oldali web-alkalmazást kell készíteni PHP nyelven.)
