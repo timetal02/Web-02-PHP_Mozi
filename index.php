@@ -27,6 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html>
+<link href="css/bootstrap.css" rel="stylesheet">
 
 <?php
 include_once 'common/head.php';

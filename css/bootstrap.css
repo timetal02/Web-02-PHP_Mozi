@@ -4358,11 +4358,11 @@ input[type="button"].btn-block {
 .card-body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 1.25rem;
+  box-shadow: none !important; /* Árnyék eltávolítása */
 }
 
 .card-title {
-  margin-bottom: 0.75rem;
+  box-shadow: none !important; /* Árnyék eltávolítása */
 }
 
 .card-subtitle {
@@ -4372,6 +4372,7 @@ input[type="button"].btn-block {
 
 .card-text:last-child {
   margin-bottom: 0;
+  box-shadow: none !important; /* Árnyék eltávolítása */
 }
 
 .card-link:hover {

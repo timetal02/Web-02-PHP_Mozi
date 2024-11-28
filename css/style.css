@@ -17,7 +17,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
-
+.card-body {
+    box-shadow: none !important; /* Eltávolítja az árnyékot a kártya hátteréről */
+  }
+  
+  .card-title,
+  .card-text {
+    background-color: #8B0000;
+    text-shadow: none !important; /* Eltávolítja az árnyékot a szövegekről */
+  }
+  
 * {
     box-sizing: border-box !important;
     transition: ease all 0.5s;
@@ -85,6 +94,10 @@ h4 { font-size: 24px; }
 }
 
 /*--------------------------------------------------------------------- banner section ---------------------------------------------------------------------*/
+.navbarSupportedContent {
+    background-color: transparent
+
+}
 
 .banner_section {
     padding: 100px 20px 80px 20px;
