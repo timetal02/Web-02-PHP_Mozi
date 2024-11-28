@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Gép: localhost
--- Létrehozás ideje: 2024. Nov 28. 08:19
+-- Gép: 127.0.0.1
+-- Létrehozás ideje: 2024. Nov 28. 11:20
 -- Kiszolgáló verziója: 10.4.32-MariaDB
--- PHP verzió: 8.2.12
+-- PHP verzió: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -79,9 +79,7 @@ CREATE TABLE `felhasznalok` (
 --
 
 INSERT INTO `felhasznalok` (`felh_ID`, `felh_nev`, `jelszo`, `jogosultsag`) VALUES
-(1, 'admin', '$2y$10$yh2XzBb./p4sppOvRxus0OaS5WAtXaitQZ1zF16k.0yVDcGOLN9W.', 'admin'),
-(2, 'regisztrált látogató', '$2y$10$nKSvrS5qltl/bGAS.0apy.2JXXgVzcwDBzbC9Bk/dxAoetelzEO7a', 'regisztrált látogató'),
-(3, 'látogató', '$2y$10$bE5mzCoXMyMuf/G73BcXaOBqF8l99S.8LRDswKdouw0pIU6V2NF1G', 'látogató');
+(0, 'Gy', '$2y$10$416/HuJn.981PAvD.k9KL.uwf1r5W3ZNFFqNU/XXfQZMVOascEpfe', 'regisztrált látogató');
 
 -- --------------------------------------------------------
 
@@ -145,6 +143,21 @@ INSERT INTO `film` (`id`, `cim`, `ev`, `hossz`) VALUES
 (42, 'Annamária', 1942, 85),
 (43, 'Magyar feltámadás', 1939, 64),
 (44, 'Rádbízom a feleségem', 1937, 55);
+
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `kapcsolat`
+--
+
+CREATE TABLE `kapcsolat` (
+  `id` int(11) NOT NULL,
+  `nev` varchar(100) NOT NULL,
+  `telefonszam` varchar(15) DEFAULT NULL,
+  `email` varchar(100) NOT NULL,
+  `uzenet` text NOT NULL,
+  `datum` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -241,16 +254,15 @@ ALTER TABLE `eloadas`
   ADD KEY `moziid` (`moziid`);
 
 --
--- A tábla indexei `felhasznalok`
---
-ALTER TABLE `felhasznalok`
-  ADD PRIMARY KEY (`felh_ID`),
-  ADD KEY `felh_nev` (`felh_nev`);
-
---
 -- A tábla indexei `film`
 --
 ALTER TABLE `film`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- A tábla indexei `kapcsolat`
+--
+ALTER TABLE `kapcsolat`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -270,10 +282,10 @@ ALTER TABLE `mozi`
 --
 
 --
--- AUTO_INCREMENT a táblához `felhasznalok`
+-- AUTO_INCREMENT a táblához `kapcsolat`
 --
-ALTER TABLE `felhasznalok`
-  MODIFY `felh_ID` int(40) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+ALTER TABLE `kapcsolat`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT a táblához `menu`

@@ -1,6 +1,29 @@
+
 <?php
-include_once 'database.php';
+include_once 'database.php'; // Adatbázis kapcsolat
+
+// Üzenet inicializálása
+$uzenet = ""; // Üres üzenet az elején
+$uzenet_szin = ""; // Üzenet színének kezelése
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nev = $conn->real_escape_string($_POST['nev']);
+    $telefonszam = $conn->real_escape_string($_POST['telefonszam']);
+    $email = $conn->real_escape_string($_POST['email']);
+    $uzenet_szoveg = $conn->real_escape_string($_POST['uzenet']);
+
+    // Adatok beszúrása
+    $sql = "INSERT INTO kapcsolat (nev, telefonszam, email, uzenet) VALUES ('$nev', '$telefonszam', '$email', '$uzenet_szoveg')";
+    if ($conn->query($sql) === TRUE) {
+        $uzenet = "Üzenet sikeresen elküldve!";
+        $uzenet_szin = "green"; // Zöld szín
+    } else {
+        $uzenet = "Hiba történt az üzenet mentésekor: " . $conn->error;
+        $uzenet_szin = "red"; // Piros szín
+    }
+}
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -300,19 +323,25 @@ Kérem adja meg a bejelentkezési adatait:
                 <div class="contact_section_2">
                     <div class="row">
                         <div class="col-md-12 padding15">
-                            <form action="">
-                                <div class="mail_section_1 ">
-                                    <input type="text" class="mail_text" placeholder="Név" name="Név">
-                                    <input type="text" class="mail_text" placeholder="Telefonszám" name="Telefonszám">
-                                    <input type="text" class="mail_text" placeholder="Email" name="Email">
-                                    <textarea class="massage-bt" placeholder="Üzenet" rows="5" id="comment" name="Üzenet"></textarea>
-                                    <div class="send_bt"><a href="#">SEND</a></div>
+                            <form method="POST"> <!-- Az űrlap kezdete -->
+                                <div class="mail_section_1">
+                                    <input type="text" name="nev" placeholder="Név" required>
+                                    <input type="text" name="telefonszam" placeholder="Telefonszám">
+                                    <input type="email" name="email" placeholder="Email" required>
+                                    <textarea name="uzenet" placeholder="Üzenet" required></textarea>
                                 </div>
-                            </form>
+                                <div class="send_bt">
+                                    <button type="submit">Küldés</button>
+                                </div>
+                            </form> <!-- Az űrlap vége -->
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
+    </div>
+</div>
+    </div>
         <div class="map_main">
             <div class="map-responsive">
                 <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="600" height="300" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
