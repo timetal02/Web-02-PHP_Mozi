@@ -87,7 +87,7 @@ Kérem adja meg a bejelentkezési adatait:
             <section class="pt-5" id="category">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="categroy_taital">Popular Categories</h1>
+                        <h1 class="categroy_taital">MűvészFilmjeink</h1>
                     </div>
                 </div>
                 <div class="categroy_section_2">
@@ -97,27 +97,27 @@ Kérem adja meg a bejelentkezési adatait:
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="hover01 column">
-                                            <figure><img src="images/img-1.png"></figure>
+                                            <figure><img src="images/piri.png"></figure>
                                         </div>
-                                        <h3 class="materials_text">Materials</h3>
-                                        <p class="categroy_text">words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't</p>
-                                        <div class="readmore_btn"><a href="#">Read More</a></div>
+                                        <h3 class="materials_text">Piri és a Kamera (1932)</h3>
+                                        <p class="categroy_text">Egy romantikus vígjáték, amely egy fiatal fényképész és egy bájos nő találkozásáról szól. A korai filmkészítés varázsát és a szerelem kialakulását ötvözi egy vidám, lendületes történetben.</p>
+ 
                                     </div>
                                     <div class="col-md-4">
                                         <div class="hover01 column">
-                                            <figure><img src="images/img-2.png"></figure>
+                                            <figure><img src="images/emmy.png"></figure>
                                         </div>
-                                        <h3 class="materials_text">Industrials</h3>
-                                        <p class="categroy_text">words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't</p>
-                                        <div class="readmore_btn active"><a href="#">Read More</a></div>
+                                        <h3 class="materials_text">Emmy (1934)</h3>
+                                        <p class="categroy_text">Egy ambiciózus fiatal nő története, aki Hollywood csillogó világában próbál érvényesülni. Az alkotás a sztárrá válás küzdelmeit és a hírnév árát mutatja be, egyedi látványvilággal.</p>
+                                        
                                     </div>
                                     <div class="col-md-4">
                                         <div class="hover01 column">
-                                            <figure><img src="images/img-3.png"></figure>
+                                            <figure><img src="images/30.png"></figure>
                                         </div>
-                                        <h3 class="materials_text">Consumer Disc</h3>
-                                        <p class="categroy_text">words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't</p>
-                                        <div class="readmore_btn"><a href="#">Read More</a></div>
+                                        <h3 class="materials_text">Az Arany Korszak (1930)</h3>
+                                        <p class="categroy_text">Egy társasági dráma, amely a szesztilalom idején játszódik, bemutatva a kor extravagáns partijait és a szereplők közötti intrikákat. A film a jazz korszak hangulatát és a titkos bárok világát idézi meg.</p>
+    
                                     </div>
                                 </div>
                             </div>
@@ -125,62 +125,30 @@ Kérem adja meg a bejelentkezési adatait:
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="hover01 column">
-                                            <figure><img src="images/img-1.png"></figure>
+                                            <figure><img src="images/blog-img1.png"></figure>
                                         </div>
-                                        <h3 class="materials_text">Materials</h3>
-                                        <p class="categroy_text">words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't</p>
-                                        <div class="readmore_btn"><a href="#">Read More</a></div>
+                                        <h3 class="materials_text">Az Ellopott Szerda (1933)</h3>
+                                        <p class="categroy_text">Egy misztikus melodráma, amely egy melankolikus fiatal nő történetét meséli el, aki egy rejtélyes bűntény szálait bogozza ki. A film a romantika és a noir elemeit ötvözi, miközben a főszereplő belső küzdelmei és érzelmi vívódásai kerülnek előtérbe. A korszak ikonikus stílusa és szimbolikája végigkíséri a történetet.</p>
+                                       
                                     </div>
                                     <div class="col-md-4">
                                         <div class="hover01 column">
-                                            <figure><img src="images/img-2.png"></figure>
+                                            <figure><img src="images/blog-img2.png"></figure>
                                         </div>
-                                        <h3 class="materials_text">Industrials</h3>
-                                        <p class="categroy_text">words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't</p>
-                                        <div class="readmore_btn active"><a href="#">Read More</a></div>
+                                        <h3 class="materials_text">Szerelmi Álmok (1932)</h3>
+                                        <p class="categroy_text">Ez a romantikus dráma egy gazdag örökös és egy középosztálybeli fiatal nő találkozásáról szól. A két világ között húzódó társadalmi különbségeket a korszak grandiózus építészeti háttere és az érzelmek színes skálája teszi hitelessé. A film központi kérdése: vajon legyőzheti-e a szerelem az osztálykorlátoka</p>
+
                                     </div>
                                     <div class="col-md-4">
                                         <div class="hover01 column">
-                                            <figure><img src="images/img-3.png"></figure>
+                                            <figure><img src="images/blog-img3.png"></figure>
                                         </div>
-                                        <h3 class="materials_text">Consumer Disc</h3>
-                                        <p class="categroy_text">words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't</p>
-                                        <div class="readmore_btn"><a href="#">Read More</a></div>
+                                        <h3 class="materials_text">Repülő Arany (1932)</h3>
+                                        <p class="categroy_text">Egy látványos kalandfilm, amely a repülés hőskorát idézi meg. A történet középpontjában egy fiatal pilóta áll, aki egy veszélyes repülős mutatványokkal teli színházi előadás során próbálja megmenteni családja nevét és örökségét. A látványos légi jelenetek és a korabeli építészeti stílus elegánsan ötvöződik ebben a drámában.</p>
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="hover01 column">
-                                            <figure><img src="images/img-1.png"></figure>
-                                        </div>
-                                        <h3 class="materials_text">Materials</h3>
-                                        <p class="categroy_text">words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't</p>
-                                        <div class="readmore_btn"><a href="#">Read More</a></div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="hover01 column">
-                                            <figure><img src="images/img-2.png"></figure>
-                                        </div>
-                                        <h3 class="materials_text">Industrials</h3>
-                                        <p class="categroy_text">words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't</p>
-                                        <div class="readmore_btn active"><a href="#">Read More</a></div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="hover01 column">
-                                            <figure><img src="images/img-3.png"></figure>
-                                        </div>
-                                        <h3 class="materials_text">Consumer Disc</h3>
-                                        <p class="categroy_text">words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't</p>
-                                        <div class="readmore_btn"><a href="#">Read More</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
                         <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
                             <i class="fa fa-angle-right"></i>
                         </a>
@@ -196,20 +164,20 @@ Kérem adja meg a bejelentkezési adatait:
             <section class="pt-5" id="about">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="market_taital">Market Research Reports</h1>
+                        <h1 class="market_taital">Rólunk, MűvészetiFilmjeink</h1>
                     </div>
                 </div>
                 <div class="market_section_2">
-                    <h4 class="market_text active">01 <span class="padding10">words which don't look even slightly believable. If you are going </span></h4>
-                    <p class="dummy_text">anything embarrassing hidden in the middle of text. All the Lorem Ipsum generator</p>
-                    <h4 class="market_text">02 <span class="padding10">words which don't look even slightly believable. If you are going </span></h4>
-                    <p class="dummy_text">anything embarrassing hidden in the middle of text. All the Lorem Ipsum g</p>
-                    <h4 class="market_text">03 <span class="padding10">words which don't look even slightly believable. If you are going </span></h4>
-                    <p class="dummy_text">anything embarrassing hidden in the middle of text. All the Lorem Ipsum generato</p>
-                    <h4 class="market_text">04 <span class="padding10">words which don't look even slightly believable. If you are going </span></h4>
-                    <p class="dummy_text">aanything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet t</p>
+                    <h4 class="market_text active">Repülő Arany (1932)<span class="padding10">
+                    <p class="dummy_text">Egy látványos kalandfilm, amely a repülés hőskorát idézi meg. A történet középpontjában egy fiatal pilóta áll, aki egy veszélyes repülős mutatványokkal teli színházi előadás során próbálja megmenteni családja nevét és örökségét. A látványos légi jelenetek és a korabeli építészeti stílus elegánsan ötvöződik ebben a drámában.</p>
+                    <h4 class="market_text">Szerelmi Álmok (1932)<span class="padding10">
+                    <p class="dummy_text">Ez a romantikus dráma egy gazdag örökös és egy középosztálybeli fiatal nő találkozásáról szól. A két világ között húzódó társadalmi különbségeket a korszak grandiózus építészeti háttere és az érzelmek színes skálája teszi hitelessé. A film központi kérdése: vajon legyőzheti-e a szerelem az osztálykorlátokat?</p>
+                    <h4 class="market_text">Az Ellopott Szerda (1933)<span class="padding10">
+                    <p class="dummy_text">Egy misztikus melodráma, amely egy melankolikus fiatal nő történetét meséli el, aki egy rejtélyes bűntény szálait bogozza ki. A film a romantika és a noir elemeit ötvözi, miközben a főszereplő belső küzdelmei és érzelmi vívódásai kerülnek előtérbe. A korszak ikonikus stílusa és szimbolikája végigkíséri a történetet.</p>
+                    <h4 class="market_text">Emmy (1934)<span class="padding10">
+                    <p class="dummy_text">Emmy egy ambiciózus nő története, aki Hollywood aranykorában próbál érvényesülni. A film bemutatja a sztárrá válás nehézségeit és a hírnév árát. A lenyűgöző kosztümök és a filmipar korabeli intrikái mellett a történet az önmegvalósítás és a személyes álmok megvalósításának kihívásait tárja elénk.</p>
                 </div>
-                <div class="seemore_bt"><a href="#">Read More</a></div>
+ 
             </section>
         </div>
     </div>
@@ -220,7 +188,7 @@ Kérem adja meg a bejelentkezési adatait:
             <section class="pt-5" id="blog">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="blog_taital">Latest Blogs</h1>
+                        <h1 class="blog_taital">Vetítéseink-Előadásaink</h1>
                     </div>
                 </div>
                 <div class="blog_section_2">
@@ -231,32 +199,31 @@ Kérem adja meg a bejelentkezési adatait:
                                 <div class="date_text"><a href="#">06<br>April</a></div>
                             </div>
                             <div class="blog_box">
-                                <h3 class="blog_text">Undoubtable source</h3>
-                                <p class="lorem_text"> looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, contenish</p>
+                                <h3 class="blog_text">Az Ellopott Szerda (1933)</h3>
+                                <p class="lorem_text">Mály Gerõ, Zalaegerszeg</p>
                             </div>
-                            <div class="read_bt"><a href="#">Read More</a></div>
+ 
                         </div>
                         <div class="col-md-4">
                             <div class="blog_img"><img src="images/blog-img2.png"></div>
                             <div class="btn_main">
-                                <div class="date_text active"><a href="#">06<br>April</a></div>
+                                <div class="date_text active"><a href="#">06<br>Majus</a></div>
                             </div>
                             <div class="blog_box">
-                                <h3 class="blog_text">Undoubtable source</h3>
-                                <p class="lorem_text"> looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, contenish</p>
+                                <h3 class="blog_text">Szerelmi Álmok (1932)</h3>
+                                <p class="lorem_text">Gertler Viktor, Győr</p> 
                             </div>
-                            <div class="read_bt active"><a href="#">Read More</a></div>
+ 
                         </div>
                         <div class="col-md-4">
                             <div class="blog_img"><img src="images/blog-img3.png"></div>
                             <div class="btn_main">
-                                <div class="date_text"><a href="#">06<br>April</a></div>
+                                <div class="date_text"><a href="#">06<br>Június</a></div>
                             </div>
                             <div class="blog_box">
-                                <h3 class="blog_text">Undoubtable source</h3>
-                                <p class="lorem_text"> looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, contenish</p>
-                            </div>
-                            <div class="read_bt"><a href="#">Read More</a></div>
+                                <h3 class="blog_text">Repülő Arany (1932)</h3>
+                                <p class="lorem_text">Salamon Béla, Kaposvár</p> 
+ 
                         </div>
                     </div>
                 </div>
@@ -270,8 +237,8 @@ Kérem adja meg a bejelentkezési adatait:
             <section class="pt-5" id="review">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="client_taital">Our clients Review</h1>
-                        <p class="client_text">Content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as</p>
+                        <h1 class="client_taital">Rólunk mondtátok</h1>
+                        <p class="client_text"> </p>
                     </div>
                 </div>
         </div>
@@ -288,13 +255,10 @@ Kérem adja meg a bejelentkezési adatait:
                                         <div class="customer_img"><img src="images/client-img.png"></div>
                                     </div>
                                     <div class="customer_right">
-                                        <h3 class="customer_name">Doen Amrk</h3>
-                                        <p class="enim_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, asIt is a long established fact that a reader will be distracted </p>
-                                    </div> <?php include 'common/footer.php'; ?>
-                                    <div class="customer_right_1">
-                                        <h3 class="customer_name">Josp Amrk</h3>
-                                        <p class="enim_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of lette </p>
+                                        <h3 class="customer_name">Kázmér Elemér</h3>
+                                        <p class="enim_text">Hihetelen élmény volt egy ilye filmet látni, modern vetítésben. Egy élmény, ha lehet na hagyd ki! </p>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -304,53 +268,17 @@ Kérem adja meg a bejelentkezési adatait:
                             <div class="col-md-12">
                                 <div class="customer_main">
                                     <div class="customer_left">
-                                        <div class="customer_img"><img src="images/client-img.png"></div>
-                                    </div>
-                                    <div class="customer_right">
-                                        <h3 class="customer_name">Doen Amrk</h3>
-                                        <p class="enim_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, asIt is a long established fact that a reader will be distracted </p>
-                                    </div>
-                                </div>
-                                <div class="customer_main_1">
-                                    <div class="customer_left_1">
+
                                         <div class="client_img1"><img src="images/client-img1.png"></div>
                                     </div>
                                     <div class="customer_right_1">
-                                        <h3 class="customer_name">Josp Amrk</h3>
-                                        <p class="enim_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of lette </p>
+                                        <h3 class="customer_name">Gipsz Jakab</h3>
+                                        <p class="enim_text">Még gyermekként láttam ezt a filmet anyám régi Tvjén, és most újra éltem gyerekkkorom, Köszönöm az élményt</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="customer_main">
-                                    <div class="customer_left">
-                                        <div class="customer_img"><img src="images/client-img.png"></div>
-                                    </div>
-                                    <div class="customer_right">
-                                        <h3 class="customer_name">Doen Amrk</h3>
-                                        <p class="enim_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, asIt is a long established fact that a reader will be distracted </p>
-                                    </div>
-                                </div>
-                                <div class="customer_main_1">
-                                    <div class="customer_left_1">
-                                        <div class="client_img1"><img src="images/client-img1.png"></div>
-                                    </div>
-                                    <div class="customer_right_1">
-                                        <h3 class="customer_name">Josp Amrk</h3>
-                                        <p class="enim_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of lette </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
-                    <i class="fa fa-arrow-left"></i>
-                </a>
                 <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
                     <i class="fa fa-arrow-right"></i>
                 </a>
@@ -365,8 +293,8 @@ Kérem adja meg a bejelentkezési adatait:
             <section class="pt-5" id="contact">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="contact_taital">Contact Us</h1>
-                        <p class="contact_text"> content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as</p>
+                        <h1 class="contact_taital">Lépj Velünk kapcsolatba!</h1>
+                        <p class="contact_text">Érdkelődj, Keress minket, ha nem találod Városod az előadásaink között Érdkelődj, Köszönjük</p>
                     </div>
                 </div>
                 <div class="contact_section_2">
@@ -374,10 +302,10 @@ Kérem adja meg a bejelentkezési adatait:
                         <div class="col-md-12 padding15">
                             <form action="">
                                 <div class="mail_section_1 ">
-                                    <input type="text" class="mail_text" placeholder="Name" name="Name">
-                                    <input type="text" class="mail_text" placeholder="Phone Number" name="Phone Number">
+                                    <input type="text" class="mail_text" placeholder="Név" name="Név">
+                                    <input type="text" class="mail_text" placeholder="Telefonszám" name="Telefonszám">
                                     <input type="text" class="mail_text" placeholder="Email" name="Email">
-                                    <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
+                                    <textarea class="massage-bt" placeholder="Üzenet" rows="5" id="comment" name="Üzenet"></textarea>
                                     <div class="send_bt"><a href="#">SEND</a></div>
                                 </div>
                             </form>

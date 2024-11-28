@@ -6,20 +6,20 @@
             <div class="location_text">
                <ul>
                   <li>
-                     <a href="#"><span class="padding_left_10"><i class="fa fa-map-marker" aria-hidden="true"></i></span>It is a long established fact that a <br>reader will be </a>
+                     <a href="#"><span class="padding_left_10"><i class="fa fa-map-marker" aria-hidden="true"></i></span>Központunk</a>
                   </li>
                   <li>
-                     <a href="#"><span class="padding_left_10"><i class="fa fa-phone" aria-hidden="true"></i></span>(+71) 1234567890</a>
+                     <a href="#"><span class="padding_left_10"><i class="fa fa-phone" aria-hidden="true"></i></span>(+36)1111111111111111/a>
                   </li>
                   <li>
-                     <a href="#"><span class="padding_left_10"><i class="fa fa-envelope" aria-hidden="true"></i></span>demo@gmail.com</a>
+                     <a href="#"><span class="padding_left_10"><i class="fa fa-envelope" aria-hidden="true"></i></span>muveszfilmek@gmail.com</a>
                   </li>
                </ul>
             </div>
          </div>
          <div class="col-md-4">
             <div class="newslatter_main">
-               <h1 class="useful_text">Follow Us</h1>
+               <h1 class="useful_text">Kövess be Minket</h1>
                <div class="footer_social_icon">
                   <ul>
                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -37,7 +37,7 @@
 <!-- copyright section start -->
 <div class="copyright_section">
    <div class="container">
-      <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free Html Templates</a> Distribution by <a href="https://themewagon.com">ThemeWagon</a></p>
+      <p class="copyright_text">2020 All Rights Reserved. Design by- AY9JNQ&PIXUNC Fejlesztőkkel készítve  <a href="https://html.design">Free Html Templates</a> Distribution by <a href="https://themewagon.com">ThemeWagon</a></p>
    </div>
 </div>
 <!-- copyright section end -->
