@@ -290,7 +290,7 @@ Kérem adja meg a bejelentkezési adatait:
                                     <div class="customer_right">
                                         <h3 class="customer_name">Doen Amrk</h3>
                                         <p class="enim_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, asIt is a long established fact that a reader will be distracted </p>
-                                    </div> <?php include 'footer.php'; ?>
+                                    </div> <?php include 'common/footer.php'; ?>
                                     <div class="customer_right_1">
                                         <h3 class="customer_name">Josp Amrk</h3>
                                         <p class="enim_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of lette </p>

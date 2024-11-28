@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once 'database.db';
+include_once 'database.php';
 
 // Adatok bevitele, illetve ellenőrzése
 

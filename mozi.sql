@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: localhost
--- Létrehozás ideje: 2024. Nov 27. 18:00
+-- Létrehozás ideje: 2024. Nov 28. 08:19
 -- Kiszolgáló verziója: 10.4.32-MariaDB
 -- PHP verzió: 8.2.12
 
@@ -73,6 +73,15 @@ CREATE TABLE `felhasznalok` (
   `jelszo` varchar(255) NOT NULL,
   `jogosultsag` enum('látogató','regisztrált látogató','admin','') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- A tábla adatainak kiíratása `felhasznalok`
+--
+
+INSERT INTO `felhasznalok` (`felh_ID`, `felh_nev`, `jelszo`, `jogosultsag`) VALUES
+(1, 'admin', '$2y$10$yh2XzBb./p4sppOvRxus0OaS5WAtXaitQZ1zF16k.0yVDcGOLN9W.', 'admin'),
+(2, 'regisztrált látogató', '$2y$10$nKSvrS5qltl/bGAS.0apy.2JXXgVzcwDBzbC9Bk/dxAoetelzEO7a', 'regisztrált látogató'),
+(3, 'látogató', '$2y$10$bE5mzCoXMyMuf/G73BcXaOBqF8l99S.8LRDswKdouw0pIU6V2NF1G', 'látogató');
 
 -- --------------------------------------------------------
 
@@ -232,9 +241,22 @@ ALTER TABLE `eloadas`
   ADD KEY `moziid` (`moziid`);
 
 --
+-- A tábla indexei `felhasznalok`
+--
+ALTER TABLE `felhasznalok`
+  ADD PRIMARY KEY (`felh_ID`),
+  ADD KEY `felh_nev` (`felh_nev`);
+
+--
 -- A tábla indexei `film`
 --
 ALTER TABLE `film`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- A tábla indexei `menu`
+--
+ALTER TABLE `menu`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -242,6 +264,22 @@ ALTER TABLE `film`
 --
 ALTER TABLE `mozi`
   ADD PRIMARY KEY (`id`);
+
+--
+-- A kiírt táblák AUTO_INCREMENT értéke
+--
+
+--
+-- AUTO_INCREMENT a táblához `felhasznalok`
+--
+ALTER TABLE `felhasznalok`
+  MODIFY `felh_ID` int(40) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT a táblához `menu`
+--
+ALTER TABLE `menu`
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Megkötések a kiírt táblákhoz
