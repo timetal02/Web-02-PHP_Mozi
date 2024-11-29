@@ -12,9 +12,10 @@ ob_start(); // Kezdd el újra a bufferelést
 
 // Adatok fogadása
 $search = isset($_POST['search']) ? $_POST['search'] : '';
-$sql = "SELECT eloadas.filmid, mozi.nev AS mozi_nev, eloadas.datum, eloadas.nezoszam, eloadas.bevetel 
-        FROM eloadas 
-        JOIN mozi ON eloadas.moziid = mozi.id";
+$sql = "SELECT film.cim, film.ev, film.hossz, mozi.nev, eloadas.datum, eloadas.nezoszam, eloadas.bevetel
+                    FROM eloadas 
+                    JOIN mozi ON eloadas.moziid = mozi.id
+                    JOIN film ON eloadas.filmid = film.id";
 
 if (!empty($search)) {
     $sql .= " WHERE eloadas.datum LIKE '%$search%' OR mozi.nev LIKE '%$search%'";
@@ -31,7 +32,7 @@ if ($result && $result->num_rows > 0) {
 // Ha nincs adat
 if (empty($data)) {
     $data = [
-        ['filmid' => '-', 'mozi_nev' => 'Nincs adat', 'datum' => '-', 'nezoszam' => '-', 'bevetel' => '-']
+        ['cim' => '-', 'ev' => '-', 'hossz' => '-', 'nev' => '-', 'datum' => '-', 'nezoszam' => '-', 'bevetel' => '-']
     ];
 }
 
@@ -56,7 +57,9 @@ $pdf->AddPage(); // Csak egyszer adjuk hozzá az oldalt
 $html = '<h1>Előadások listája</h1>';
 $html .= '<table border="1" cellpadding="5">
             <tr>
-                <th>Film ID</th>
+                <th>Cím</th>
+                <th>Év</th>
+                <th>Időtartam</th>
                 <th>Mozi</th>
                 <th>Dátum</th>
                 <th>Nézőszám</th>
@@ -65,8 +68,10 @@ $html .= '<table border="1" cellpadding="5">
 
 foreach ($data as $row) {
     $html .= '<tr>
-                <td>' . htmlspecialchars($row['filmid']) . '</td>
-                <td>' . htmlspecialchars($row['mozi_nev']) . '</td>
+                <td>' . htmlspecialchars($row['cim']) . '</td>
+                <td>' . htmlspecialchars($row['ev']) . '</td>
+                <td>' . htmlspecialchars($row['hossz']) . '</td>
+                <td>' . htmlspecialchars($row['nev']) . '</td>
                 <td>' . htmlspecialchars($row['datum']) . '</td>
                 <td>' . htmlspecialchars($row['nezoszam']) . '</td>
                 <td>' . htmlspecialchars($row['bevetel']) . '</td>
