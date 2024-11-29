@@ -45,9 +45,10 @@ include_once 'database.php'; // Adatbázis kapcsolat
             <?php
             // Keresési feltétel kezelése
             $search = isset($_GET['search']) ? $conn->real_escape_string($_GET['search']) : '';
-            $sql = "SELECT eloadas.filmid, mozi.nev AS mozi_nev, eloadas.datum, eloadas.nezoszam, eloadas.bevetel 
+            $sql = "SELECT film.cim, film.ev, film.hossz, eloadas.filmid, mozi.nev, eloadas.datum, eloadas.nezoszam, eloadas.bevetel
                     FROM eloadas 
-                    JOIN mozi ON eloadas.moziid = mozi.id";
+                    JOIN mozi ON eloadas.moziid = mozi.id
+                    JOIN film ON eloadas.filmid = film.id";
 
             if (!empty($search)) {
                 $sql .= " WHERE eloadas.datum LIKE '%$search%' OR mozi.nev LIKE '%$search%'";
@@ -62,7 +63,12 @@ include_once 'database.php'; // Adatbázis kapcsolat
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Film ID: <?php echo htmlspecialchars($row['filmid']); ?></h5>
-                            <p><strong>Mozi:</strong> <?php echo htmlspecialchars($row['mozi_nev']); ?></p>
+                            <p><strong>Cím:</strong> <?php echo htmlspecialchars($row['cim']); ?></p>
+                            <p><strong>Megjelenés:</strong> <?php echo htmlspecialchars($row['ev']); ?></p>
+                            <p><strong>Időtartam:</strong> <?php echo htmlspecialchars($row['hossz']); ?></p>
+
+
+                            <p><strong>Mozi:</strong> <?php echo htmlspecialchars($row['nev']); ?></p>
                             <p><strong>Dátum:</strong> <?php echo htmlspecialchars($row['datum']); ?></p>
                             <p><strong>Nézőszám:</strong> <?php echo htmlspecialchars($row['nezoszam']); ?></p>
                             <p><strong>Bevétel:</strong> <?php echo htmlspecialchars($row['bevetel']); ?> Ft</p>

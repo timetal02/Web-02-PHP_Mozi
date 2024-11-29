@@ -70,7 +70,7 @@ foreach ($menu_items as $item) {
 
                     // Admin menüpont dinamikus hozzáadása
                     if (isset($_SESSION['felh_ID']) && $_SESSION['jogosultsag'] === 'admin') {
-                        echo '<li class="nav-item"><a  class="nav-link" href="admin.php">Admin</a></li>';
+                        echo '<li class="nav-item"><a  class="nav-link" href="adminProjections.php">Admin</a></li>';
                     }
                     ?>
                 </ul>
