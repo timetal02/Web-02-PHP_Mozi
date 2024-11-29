@@ -50,6 +50,7 @@ include_once 'common/head.php';
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
+                Kérem adja meg a bejelentkezési adatait:
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-md-6">
@@ -58,10 +59,7 @@ include_once 'common/head.php';
                             <div class="col-md-6">
                                 <div class="banner_taital_main">
                                     <h1 class="banner_taital">Művészfilmek</h1>
-                                    <form>
-                                        <input type="text" class="search_text" placeholder="Keresés előadásokra" name="Keresés előadásokra"">
-                                        <div class="search_bt"><a href="/search.php">Keresés</a></div>
-                                    </form>
+
                                 </div>
                             </div>
                         </div>
@@ -74,16 +72,10 @@ include_once 'common/head.php';
                             <div class="col-md-6">
                                 <div class="banner_taital_main">
                                     <h1 class="banner_taital">"Csókolj meg édes" c. Romantikus film"</h1>
-                                    <form><p class="categroy_text">Két világ talákozása egy helyen...</p>
-                                        <input type="text" class="search_text" placeholder="Keresés előadásokra"" name="Keresés előadásokra"">
-                                        <div class="search_bt"><a href="/search.php">Keresés</a></div>
-                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-Kérem adja meg a bejelentkezési adatait:
-
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-md-6">
@@ -91,11 +83,9 @@ Kérem adja meg a bejelentkezési adatait:
                             </div>
                             <div class="col-md-6">
                                 <div class="banner_taital_main">
-                                    <h1 class="banner_taital">"Te és Én" klassza siker film újra a vásznon!"</h1>
-                                    <form>
-                                        <input type="text" class="search_text" placeholder="Keresés az előadásokra" name="Keresés az előadásokra">
-                                        <div class="search_bt"><a href="/search.php">Keresés</a></div>
-                                    </form>
+                                    <h1 class="banner_taital">"Te és Én"
+                                         kassza siker film újra a vásznon!"</h1>
+
                                 </div>
                             </div>
                         </div>

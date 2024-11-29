@@ -15,6 +15,7 @@ include_once 'database.php'; // Adatbázis kapcsolat
     <?php include_once 'common/header.php'; ?> <!-- Fejléc -->
 
     <div class="container mt-5">
+        <!-- Előadások listája -->
         <div class="row">
             <div class="col-md-12">
                 <h1 class="text-center">Előadások listája</h1>
@@ -22,16 +23,24 @@ include_once 'database.php'; // Adatbázis kapcsolat
             </div>
         </div>
 
-        <!-- Keresőmező -->
+        <!-- Keresőmező és PDF generálás gomb -->
         <div class="row mb-4">
-            <div class="col-md-12">
-                <form method="GET" class="form-inline d-flex justify-content-center">
+            <div class="col-md-8">
+                <!-- Keresőmező -->
+                <form method="GET" class="form-inline d-flex justify-content-start">
                     <input type="text" name="search" class="form-control mr-2" placeholder="Keresés dátum vagy mozi alapján">
                     <button type="submit" class="btn btn-primary">Keresés</button>
                 </form>
             </div>
+            <div class="col-md-4 text-right">
+                <!-- PDF Generálás gomb -->
+                <form action="pdf_generator.php" method="POST">
+                    <button type="submit" class="btn btn-success">Lista a teljes előadásokról letölthető itt</button>
+                </form>
+            </div>
         </div>
 
+        <!-- Előadások listája -->
         <div class="row">
             <?php
             // Keresési feltétel kezelése
@@ -74,5 +83,6 @@ include_once 'database.php'; // Adatbázis kapcsolat
     <?php include_once 'common/footer.php'; ?> <!-- Lábjegyzet -->
 
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

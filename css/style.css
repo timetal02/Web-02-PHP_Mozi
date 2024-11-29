@@ -109,6 +109,8 @@ h4 { font-size: 24px; }
     font-size: 80px;
     font-family: 'Great Vibes', cursive;
     color: #FFD700;
+    margin-top: 100px; /* Ezzel lejjebb tolod a szöveget */
+    text-align: center; /* Középre igazítás */
 }
 
 .search_text {
