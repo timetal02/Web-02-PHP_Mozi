@@ -270,7 +270,7 @@ include_once 'common/head.php';
                                     </div>
                                     <div class="customer_right">
                                         <h3 class="customer_name">Kázmér Elemér</h3>
-                                        <p class="enim_text">Hihetelen élmény volt egy ilye filmet látni, modern vetítésben. Egy élmény, ha lehet na hagyd ki! </p>
+                                        <p class="enim_text">Hihetelen élmény volt egy ilyen filmet látni, modern vetítésben. Egy élmény, ha lehet na hagyd ki! </p>
                                     </div>
 
                                 </div>
