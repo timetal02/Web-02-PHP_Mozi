@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Gép: localhost
--- Létrehozás ideje: 2024. Nov 30. 13:11
+-- Gép: 127.0.0.1
+-- Létrehozás ideje: 2024. Nov 30. 15:55
 -- Kiszolgáló verziója: 10.4.32-MariaDB
--- PHP verzió: 8.2.12
+-- PHP verzió: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -149,6 +149,28 @@ INSERT INTO `film` (`id`, `cim`, `ev`, `hossz`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Tábla szerkezet ehhez a táblához `kapcsolat`
+--
+
+CREATE TABLE `kapcsolat` (
+  `id` int(11) NOT NULL,
+  `nev` varchar(100) NOT NULL,
+  `telefonszam` varchar(20) DEFAULT NULL,
+  `email` varchar(100) NOT NULL,
+  `uzenet` text NOT NULL,
+  `datum` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- A tábla adatainak kiíratása `kapcsolat`
+--
+
+INSERT INTO `kapcsolat` (`id`, `nev`, `telefonszam`, `email`, `uzenet`, `datum`) VALUES
+(1, 'f', 'ff', 'f@d', 'ddd', '2024-11-30 14:42:34');
+
+-- --------------------------------------------------------
+
+--
 -- Tábla szerkezet ehhez a táblához `menu`
 --
 
@@ -227,7 +249,8 @@ INSERT INTO `mozi` (`id`, `nev`, `varos`, `ferohely`) VALUES
 (34, 'Márkus Emília', 'Sopron', 160),
 (35, 'Varsányi Irén', 'Budapest', 300),
 (36, 'Hegedüs Gyula', 'Budapest', 155),
-(37, 'Rajnay Gábor', 'Gyöngyös', 210);
+(37, 's', 'ww', 0),
+(39, 'ww', 'ááá', 500);
 
 --
 -- Indexek a kiírt táblákhoz
@@ -251,6 +274,12 @@ ALTER TABLE `felhasznalok`
 -- A tábla indexei `film`
 --
 ALTER TABLE `film`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- A tábla indexei `kapcsolat`
+--
+ALTER TABLE `kapcsolat`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -282,6 +311,12 @@ ALTER TABLE `film`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
+-- AUTO_INCREMENT a táblához `kapcsolat`
+--
+ALTER TABLE `kapcsolat`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT a táblához `menu`
 --
 ALTER TABLE `menu`
@@ -291,7 +326,7 @@ ALTER TABLE `menu`
 -- AUTO_INCREMENT a táblához `mozi`
 --
 ALTER TABLE `mozi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- Megkötések a kiírt táblákhoz
