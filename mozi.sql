@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: localhost
--- Létrehozás ideje: 2024. Nov 29. 19:39
+-- Létrehozás ideje: 2024. Nov 30. 13:11
 -- Kiszolgáló verziója: 10.4.32-MariaDB
 -- PHP verzió: 8.2.12
 
@@ -274,6 +274,12 @@ ALTER TABLE `mozi`
 --
 ALTER TABLE `felhasznalok`
   MODIFY `felh_ID` int(40) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT a táblához `film`
+--
+ALTER TABLE `film`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT a táblához `menu`
